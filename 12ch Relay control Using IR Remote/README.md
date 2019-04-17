@@ -5,7 +5,8 @@ First we need to understand first what is IR (Infrared radiation) Communication.
 IR, or infrared, communication is a common, inexpensive, and easy to use wireless communication technology. IR light is very similar to visible light, except that it has a slightly longer wavelength. This means IR is undetectable to the human eye - perfect for wireless communication. To learn about IR Communication click [here](https://learn.sparkfun.com/tutorials/ir-communication/ir-communication-basics). 
 
 To find IR codes of your remote (any appliances remote). You need TSOP382 IR photo sensor to receive and demodulate the IR signal from a common remote control.
-![TSOP382 IR]()
+
+![picture alt](https://github.com/mihir8181/Arduino_geek_projects/blob/master/12ch%20Relay%20control%20Using%20IR%20Remote/TSOP382%20IR%20sensor.jpeg)
 
 
 
