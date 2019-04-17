@@ -2,7 +2,7 @@
 
 
 To run this sketch you need IRremote Library. 
-Copy of Version 2.1.0 library is here in [lib](https://github.com/mihir8181/Arduino_geek_projects/tree/master/12ch%20Relay%20control%20Using%20IR%20Remote/Lib) folder.
+I have used IRremote library Version 2.1.0 is here in [lib](https://github.com/mihir8181/Arduino_geek_projects/tree/master/12ch%20Relay%20control%20Using%20IR%20Remote/Lib) folder.
 
 Navigate to the new [Releases](https://github.com/z3t0/Arduino-IRremote/releases), and installed updated library.
 
