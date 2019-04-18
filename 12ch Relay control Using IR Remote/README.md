@@ -132,6 +132,9 @@ Connect arduino's **GND pin** to the TSOP IR's **GND pin**
 
 <p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/12ch%20Relay%20control%20Using%20IR%20Remote/Relay%20board%20Image.jpeg" width="400" hight="100"/></p>
 
- 
+I have created 2 version of code for IR remote controlled 12ch 5v Relay. This relay has 12 channel and operates on 5 volt DC supply. In version v1 12-Relays can turn On or OFF using 12 remote buttons(one button per relay to turn On & OFF). When button A is pressed, then IR code 0xF720DF for button A is received on serial monitor. Then we are processing those in cases and relay 1 will turn On and it will turn off if the same button is pressed again. Use this[_12_ch_relay_over_IR_remote_v1.ino](https://github.com/mihir8181/Arduino_geek_projects/blob/master/12ch%20Relay%20control%20Using%20IR%20Remote/sketch/_12_ch_relay_over_IR_remote_v1.ino). 
+
+
+Version v2 is almost same like v1 just the one fuctionality is different than v1. In this version of code. It will work as same as V1, but when Button On or Off is press on the remote I am wirelessly turning On and Off all relay together respectively . For this functionality  use[_12ch_Relay_control_over_remote_v2.ino](https://github.com/mihir8181/Arduino_geek_projects/blob/master/12ch%20Relay%20control%20Using%20IR%20Remote/sketch/_12ch_Relay_control_over_remote_v2.ino).
 
 
