@@ -1,14 +1,10 @@
 # Relay control using IR Remote
- IR Communication is widely used communication protocol and easy to use wireless technology for different applications.
+ **IR Communication** is widely used communication protocol and easy to use wireless technology for different applications.
  We use this wireless communication daily, like TV/settop box/audio player/video player Remote control. 
 
 First we need to understand first what is IR (Infrared radiation) Communication before controlling relay using IR remote.
 
 IR, or infrared, communication is a common, inexpensive, and easy to use wireless communication technology. IR light is very similar to visible light, except that it has a slightly longer wavelength. This means IR is undetectable to the human eye - perfect for wireless communication. To learn about IR Communication click [here](https://learn.sparkfun.com/tutorials/ir-communication/ir-communication-basics). 
-
-For this project you can use any remote or old tv remote too. To find IR codes of your remote (any appliances remote). You need TSOP1738 IR photo sensor(Receiver) to receive and demodulate the IR signal from a common remote control and to process this signal we need microcontroller. So, we are using Arduino uno microcontroller as its easy to use. Image shown below is TSOP IR Receiver.
-
-<img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/12ch%20Relay%20control%20Using%20IR%20Remote/TSOP382%20IR%20sensor.jpeg" width="350" hight="250"/> 
 
 #  
 
@@ -41,7 +37,10 @@ or follow the steps:
 4. Move the "IRremote" folder that has been extracted to your libraries directory.
 5. Make sure to delete Arduino_Root/libraries/RobotIRremote. Where Arduino_Root refers to the install directory of Arduino. The library RobotIRremote has similar definitions to IRremote and causes errors.
 
+## TSOP IR sensor/receiver
+For this project you can use any remote or old tv remote too. To find IR codes of your remote (any appliances remote). You need TSOP1738 IR photo sensor(Receiver) to receive and demodulate the IR signal from a common remote control and to process this signal we need microcontroller. So, we are using Arduino uno microcontroller as its easy to use. Image shown below is TSOP IR Receiver.
 
+<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/12ch%20Relay%20control%20Using%20IR%20Remote/TSOP382%20IR%20sensor.jpeg" width="350" hight="250"/></p> 
 
 ## How to receive IR code
 
@@ -90,7 +89,9 @@ You will get IR code printed on serial monitor when you press button and thats h
     
 Do the need needful connection shown in picture above.
 Connect aruino to IDE. Compile and upload sketch "IRrecvDemo.ino" from examples.
-Then open serial monitor and press remote buttons infront of sensors, you will receive IR codes of each button on serial monitor when you press any buttons. 
+Then open serial monitor and press remote buttons infront of sensors, you will receive IR codes of each button on serial monitor when you press any buttons. For this project I am using remote of my old remote control LED strip shown below.
+
+<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/12ch%20Relay%20control%20Using%20IR%20Remote/Remote%20Control.jpg" width="200" hight="80"/></p>
 
 Here are all IR codes for my remote controller.
 ```
@@ -123,6 +124,14 @@ D2 - D13 pin  |      -             | In1 - In12 Pin
 <img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/12ch%20Relay%20control%20Using%20IR%20Remote/IR%20Realy%20Control.png" width="900" hight="300"/> 
 
 Here is the connection to connect Relay Board and TSOP1738 IR sensor to Arduino Uno.
-Connect digital output pins **D2 - D13** of arduino to the 12ch 5v relay board input pins **In1-In12**.
+Connect arduino's digital output pins **D2 - D13** of arduino to the 12ch-5v relay board input pins **In1-In12**.
+Connect arduino's **GND & 5V pins** to the 12ch-5v relay board's **GND & VCC pin** respectively.
+Connect arduino's Analog **A1 pin** to the TSOP IR's **OUT pin**.
+Connect arduino's **5v pin** to the TSOP IR's **Vs pin**.
+Connect arduino's **GND pin** to the TSOP IR's **GND pin**
+
+<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/12ch%20Relay%20control%20Using%20IR%20Remote/Relay%20board%20Image.jpeg" width="400" hight="100"/></p>
+
+ 
 
 
