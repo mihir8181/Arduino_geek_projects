@@ -17,7 +17,7 @@ For this project you can use any remote or old tv remote too. To find IR codes o
 1) TSOP382 IR sensor/receiver  Approx $0.53 [here](https://www.alliedelec.com/product/vishay-dale/tsop38238/70331872/?gclid=CjwKCAjwndvlBRANEiwABrR32IOTydD3KtKM1kgRFPIFdYcZSVGTDUAJz0x2V7v3q4aTXxHf_2D5-BoCq68QAvD_BwE&gclsrc=aw.ds)
 2) Arduino Uno Approx $16.90 [Amazon](https://www.amazon.com/RoboGets-Compatible-ATmega328P-Microcontroller-Electronics/dp/B01N4LP86I/ref=asc_df_B01N4LP86I/?tag=hyprod-20&linkCode=df0&hvadid=309707619534&hvpos=1o1&hvnetw=g&hvrand=18224100230185066445&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9051519&hvtargid=pla-570706401833&psc=1)
 3) 8-channel or 12-channel Relay Board Approx $10.88 [Amazon](https://www.amazon.com/8-Channel-Shield-Module-Optocoupler-Arduino/dp/B01ARS8OVQ/ref=asc_df_B01ARS8OVQ/?tag=hyprod-20&linkCode=df0&hvadid=241973970700&hvpos=1o6&hvnetw=g&hvrand=17922889264405877427&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9051519&hvtargid=pla-395268347022&psc=1) 
-4) Bunch of M-M M-F wires Approx $5.79 [Amazon](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_4?crid=2HVSFC7OD3LH2&keywords=breadboard+wires&qid=1555539468&s=electronics&sprefix=breadboard+wire%2Celectronics%2C222&sr=1-4)
+4) Bunch of M-M M-F jumper wires Approx $5.79 [Amazon](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_4?crid=2HVSFC7OD3LH2&keywords=breadboard+wires&qid=1555539468&s=electronics&sprefix=breadboard+wire%2Celectronics%2C222&sr=1-4)
 5) Remote Controller(Used here for project) Approx $3.72 [Ebay](https://www.ebay.com/itm/For-3528-5050-RGB-LED-Strip-Light-Mini-3-24-44-Key-IR-Remote-Wireless-Controller/152286320967?var=451484065414&hash=item2374f8d947:m:mRcNXQbJlG1xPvFdzzDc-eQ)
 
 
@@ -76,7 +76,33 @@ void loop() {
 
 The IRrecv class performs the decoding, and is initialized with enableIRIn(). The decode() method is called to see if a code has been received; if so, it returns a nonzero value and puts the results into the decode_results structure. (For details of this structure, see the examples/IRrecvDump sketch.) Once a code has been decoded, the resume() method must be called to resume receiving codes.
 So, this sketch we are using to find IR code of each button you press on your remote controller.
+You will get IR code printed on serial monitor when you press button and thats how you can find IR code for your remote controller.
 
+Here are all IR codes for my remote controller.
+```
+code1  0xF720DF  code received from button A 
+code2  0xF7A05F  code received from button B 
+code3  0xF7609F  code received from button C 
+code4  0xF7E01F  code received from button D 
+code5  0xF710EF  code received from button E 
+code6  0xF7906F  code received from button F 
+code7  0xF750AF  code received from button G 
+code8  0xF7D02F  code received from button H 
+code9  0xF730CF  code received from button E 
+code10 0xF7B04F  code received from button F 
+code11 0xF7708F  code received from button G 
+code12 0xF7F00F  code received from button H 
+code13 0xF740BF  code received from button OFF ---> to turn OFF all the Digital pins 
+code14 0xF7C03F  code received from button ON ----> to turn ON all the digital pins 
+```
 
+## How to setup Hardware
+
+  Arduino     | TSOP IR Sensor| Relay Board
+------------- | ------------- |-------------
+   5v pin     |    Vs pin     |  VCC pin
+   GND pin    |    GND Pin    |  GND pin
+Analog A1 pin |    OUT pin    |     -
+D2 - D13 pin  |      -        |In1 - In12 Pin      
 
 
