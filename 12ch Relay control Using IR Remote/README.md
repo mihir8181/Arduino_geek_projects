@@ -18,6 +18,7 @@ For this project you can use any remote or old tv remote too. To find IR codes o
 2) Arduino Uno Approx $16.90 [Amazon](https://www.amazon.com/RoboGets-Compatible-ATmega328P-Microcontroller-Electronics/dp/B01N4LP86I/ref=asc_df_B01N4LP86I/?tag=hyprod-20&linkCode=df0&hvadid=309707619534&hvpos=1o1&hvnetw=g&hvrand=18224100230185066445&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9051519&hvtargid=pla-570706401833&psc=1)
 3) 8-channel or 12-channel Relay Board Approx $10.88 [Amazon](https://www.amazon.com/8-Channel-Shield-Module-Optocoupler-Arduino/dp/B01ARS8OVQ/ref=asc_df_B01ARS8OVQ/?tag=hyprod-20&linkCode=df0&hvadid=241973970700&hvpos=1o6&hvnetw=g&hvrand=17922889264405877427&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9051519&hvtargid=pla-395268347022&psc=1) 
 4) Bunch of M-M M-F wires Approx $5.79 [Amazon](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_4?crid=2HVSFC7OD3LH2&keywords=breadboard+wires&qid=1555539468&s=electronics&sprefix=breadboard+wire%2Celectronics%2C222&sr=1-4)
+5) Remote Controller(Used here for project) Approx $3.72 [Ebay](https://www.ebay.com/itm/For-3528-5050-RGB-LED-Strip-Light-Mini-3-24-44-Key-IR-Remote-Wireless-Controller/152286320967?var=451484065414&hash=item2374f8d947:m:mRcNXQbJlG1xPvFdzzDc-eQ)
 
 
 Then first step to run any sketch from this repository you need IRremote Library to be installed. 
@@ -42,7 +43,7 @@ or follow the steps:
 
 
 
-## How to receive 
+## How to receive IR code
 
 Each time you press a button on the remote control, a unique hexadecimal code is generated. This is the information that is modulated and sent over IR to the receiver. In order to decipher which key is pressed, the receiving microcontroller needs to know which code corresponds to each key on the remote.
 
@@ -74,4 +75,8 @@ void loop() {
 ```
 
 The IRrecv class performs the decoding, and is initialized with enableIRIn(). The decode() method is called to see if a code has been received; if so, it returns a nonzero value and puts the results into the decode_results structure. (For details of this structure, see the examples/IRrecvDump sketch.) Once a code has been decoded, the resume() method must be called to resume receiving codes.
+So, this sketch we are using to find IR code of each button you press on your remote controller.
+
+
+
 
