@@ -183,6 +183,10 @@ In the **void loop()** block, the function **irrecv.decode** (line 104) will ret
 
 At the end of the **void loop()** section, we call **irrecv.resume()** (line 241) to reset the receiver and prepare it to receive the next code.
 
-So far we have learned the peoperties of IR(infrared radiation) and how we can communicate between transmitter and receiver using IR receiver(TSOP sensor/receiver) and remote controller (transmitter). Also learned to find the IR codes of any remote controller and how to use them for any application. Finally, I showed you how to control relays with IR remote using Arduino Uno.
+## Other applications
+
+Based on this you can control 12 number of appliances and also you can modify it to more or less number of relay control as per your application. You can build part of your home automation using this sketch. You can control 12 Solenoid valve instead of relay, etc. There are many application of daily uses for which you can use these sketches. The soley purpose of this project is to control relays using IR remote which is achieved.   
+
+So far we have learned the properties of IR(infrared radiation) and how we can communicate between transmitter and receiver using IR receiver(TSOP sensor/receiver) and remote controller (transmitter). Also learned to find the IR codes of any remote controller and how to use them for any application. Finally, I showed you how to control relays with IR remote using Arduino Uno.
 
 _**Have a fun with this DIY stuff**_
