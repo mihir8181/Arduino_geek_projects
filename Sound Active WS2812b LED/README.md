@@ -10,10 +10,12 @@ For that we get signals from microphone sound detector sensor, process detector'
 
 ## Components/Hardware/parts 
 
-1) Microphone Sound Detection Sensor for Approx $1.50 [Hobbyking](https://hobbyking.com/en_us/keyes-microphone-sound-detection-sensor-module-for-arduino.html?countrycode=US&gclid=Cj0KCQjwhuvlBRCeARIsAM720HovdCHMOsqVcQKAN5QPI1nz0cJw2SFfm2kv25AZecH4VzD5YO_hwEQaAk-PEALw_wcB&gclsrc=aw.ds)
-2) Arduino Uno Approx $16.90 [Amazon](https://www.amazon.com/RoboGets-Compatible-ATmega328P-Microcontroller-Electronics/dp/B01N4LP86I/ref=asc_df_B01N4LP86I/?tag=hyprod-20&linkCode=df0&hvadid=309707619534&hvpos=1o1&hvnetw=g&hvrand=18224100230185066445&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9051519&hvtargid=pla-570706401833&psc=1)
-3) Bunch of M-M, M-F jumper wires Approx $5.79 [Amazon](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_4?crid=2HVSFC7OD3LH2&keywords=breadboard+wires&qid=1555539468&s=electronics&sprefix=breadboard+wire%2Celectronics%2C222&sr=1-4)
-4) WS2812B Addressable LED strip(5m 30LED/1M) Approx 32.99 [Amazon](https://www.amazon.com/Individually-Addressable-Digital-30IC-30LED-Waterproof/dp/B014QKWJDU/ref=asc_df_B014QKWJDU/?tag=hyprod-20&linkCode=df0&hvadid=232831470222&hvpos=1o1&hvnetw=g&hvrand=17243202234086439094&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9051519&hvtargid=pla-391531182889&psc=1)
+1) Microphone Sound Detection Sensor 3pc for Approx $6.17 [Amazon](https://amzn.to/2Xxkp1s)
+2) Arduino Uno Approx $16.90 [Amazon](https://amzn.to/2KTjVS8)
+3) Bunch of M-M, M-F jumper wires Approx $5.79 [Amazon](https://amzn.to/2XAULcp)
+4) WS2812B Addressable LED strip(5m 30LED/1M) Approx 21.88 [Amazon](https://amzn.to/2DrXdu3)
+                                (1m 30LEDS).  Approx 9.99 [Amazon](https://amzn.to/2XvQFlK)
+
 
 Then first step to run any sketch from this repository you need Adafruit Neopixel Library to be installed. 
 
