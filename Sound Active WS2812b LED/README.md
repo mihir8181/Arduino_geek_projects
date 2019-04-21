@@ -1,6 +1,6 @@
 # Sound Active WS2812b (Addressable) LED
 
-<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Voice%20acitve%20WS2812b%20LED/Result.jpeg" width="400" hight="100"/></p> 
+<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Sound%20Active%20WS2812b%20LED/Result.jpeg" width="400" hight="100"/></p> 
 
 This DIY project is to make sound active WS2812b addressable LED.
 For that we get signals from microphone sound detector sensor, process detector's analog output into arduino and control WS2812b addressable LED with sound.
@@ -16,7 +16,7 @@ For that we get signals from microphone sound detector sensor, process detector'
 Then first step to run any sketch from this repository you need Adafruit Neopixel Library to be installed. 
 
 ## Adafruit's NeoPixel Library
-I have used Adafrit's NeoPixel library is here in my [library](https://github.com/mihir8181/Arduino_geek_projects/tree/master/Voice%20acitve%20WS2812b%20LED/Library/Adafruit_NeoPixel-master) folder.
+I have used Adafrit's NeoPixel library is here in my [library](https://github.com/mihir8181/Arduino_geek_projects/tree/master/Sound%20Active%20WS2812b%20LED/Library/Adafruit_NeoPixel-master) folder.
 
 Navigate to the new [Releases](https://github.com/adafruit/Adafruit_NeoPixel), and installed updated library.
 
@@ -40,7 +40,7 @@ and download from there, or just click [Here](https://github.com/adafruit/Adafru
 
 ## Microphone Sound Detection Sensor.
 
-<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Voice%20acitve%20WS2812b%20LED/Sound%20Sensor.jpg" width="350" hight="250"/></p> 
+<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Sound%20Active%20WS2812b%20LED/Sound%20Sensor.jpg" width="350" hight="250"/></p> 
 
 
 ## How to setup Hardware
@@ -53,8 +53,8 @@ Now we need to connect WS2812B LED Strip and Microphone Sound Sensor to Arduino 
 Analog A0 pin |       AnalogOUT A0 pin    |     -
    D6 pin     |             -             |   Data In Pin      
 
-<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Voice%20acitve%20WS2812b%20LED/Arduino.jpeg" width="500" hight="150"/></p> 
-<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Voice%20acitve%20WS2812b%20LED/Setup.jpg" width="500" hight="250"/></p> 
+<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Sound%20Active%20WS2812b%20LED/Arduino.jpeg" width="500" hight="150"/></p> 
+<p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Sound%20Active%20WS2812b%20LED/Setup.jpg" width="500" hight="250"/></p> 
 
 Here is the connection to connect WS2812B LED Strip and Microphone Sound Sensor to Arduino Uno.
 
@@ -101,7 +101,9 @@ The second line, **strip.show()**, isn’t absolutely necessary, it’s just the
 
 The Project Sketch have mostly all descriptive comments. So its easy to undersand. 
 
-
+<video width="320" height="240" controls>
+  <source src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Sound%20Active%20WS2812b%20LED/IMG_5165.MOV" type="video/mp4">
+</video>
 
 ## Other applications
 
