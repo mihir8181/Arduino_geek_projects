@@ -101,7 +101,9 @@ The second line, **strip.show()**, isn’t absolutely necessary, it’s just the
 
 The Project Sketch have mostly all descriptive comments. So its easy to undersand. 
 
-
+<video width="320" height="240" controls>
+  <source src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Sound%20Active%20WS2812b%20LED/IMG_5165.MOV" type="video/mp4">
+</video>
 
 ## Other applications
 
