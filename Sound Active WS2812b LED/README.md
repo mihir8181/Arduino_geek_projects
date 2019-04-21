@@ -2,8 +2,11 @@
 
 <p align="center"><img src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Sound%20Active%20WS2812b%20LED/Result.gif" width="400" hight="100"/></p>
 
+
+
+
 This DIY project is to make sound active WS2812b addressable LED.
-For that we get signals from microphone sound detector sensor, process detector's analog output into arduino and control WS2812b addressable LED with sound.
+For that we get signals from microphone sound detector sensor, process detector's analog output into arduino and control WS2812b addressable LED with sound. [Watch the video](https://youtu.be/DWXmcm8SC8M)
 
 
 ## Components/Hardware/parts 
@@ -105,8 +108,5 @@ The Project Sketch have mostly all descriptive comments. So its easy to undersan
   <source src="https://github.com/mihir8181/Arduino_geek_projects/blob/master/Sound%20Active%20WS2812b%20LED/IMG_5165.MOV" type="video/mp4">
 </video> 
 
-## Other applications
-
-Finally, I showed you how to control WS2812B with Voice using Arduino Uno.
 
 _**Have a fun with this DIY stuff**_
